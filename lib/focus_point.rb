@@ -64,13 +64,13 @@ class FocusPoint
   def enlarge_frame x1, y1, x2, y2
     # - if frame size < img size and gap between frame border and image border present increase frame size proportionaly
     if x1 > 0 && x2 < img_width && y1 > 0 && y2 < img_height 
-      values = [
+      gaps_percentage = [
         x1.to_f/frame_data[:width], 
         y1.to_f/frame_data[:height], 
         (img_width - x2).to_f/frame_data[:width], 
         (img_height - y2).to_f/frame_data[:height]
       ]
-      ratio = values.min
+      ratio = gaps_percentage.min
       pixels_x = (frame_data[:width].to_f * ratio).to_i
       pixels_y = (frame_data[:height].to_f * ratio).to_i
       
