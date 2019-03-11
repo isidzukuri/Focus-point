@@ -6,7 +6,7 @@ It know how to:
 - makes area bigger if its possible. if area size < container size and gap between area border and container border present will increase area size proportionaly
 
 Usage:
-```
+```ruby
 # img_width - container width
 # img_height - container height
 # frame_width - width of cropping area
