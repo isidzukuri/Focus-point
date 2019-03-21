@@ -1,7 +1,7 @@
 # Focus-point
 Calculates coordinates of area around given point inside given container. Possible usage: retrieve parameters for image  cropping. Works similar to https://jonom.github.io/jquery-focuspoint/demos/helper/index.html.
 It know how to:
-- change area size ptoportionaly if container is bigger than area
+- change area size proportionaly if container is bigger than area
 - move area if it crosses image's borders
 - makes area bigger if its possible. if area size < container size and gap between area border and container border present will increase area size proportionaly
 
