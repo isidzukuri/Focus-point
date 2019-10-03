@@ -25,6 +25,10 @@ class FocusPoint
     frame_data
   end
 
+  private
+
+  attr_accessor :img_width, :img_height, :point_x, :point_y, :frame_data
+  
   def draw_frame
     frame_half_w = (frame_width / 2).to_i
     frame_x_left = point_x - frame_half_w
@@ -79,10 +83,6 @@ class FocusPoint
       frame_data[:height] += (pixels_y * 2).to_i
     end
   end
-
-  private
-
-  attr_accessor :img_width, :img_height, :point_x, :point_y, :frame_data
 
   def validate_point
     if !point_x ||
